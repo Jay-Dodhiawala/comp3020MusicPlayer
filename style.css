@@ -1,0 +1,48 @@
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  .sidebar a:hover {
+    color: yellow;
+  }
+
+  .sidebar .openbtn {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    font-size: 36px;
+    display: none;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    display: block;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 250px;
+  }
