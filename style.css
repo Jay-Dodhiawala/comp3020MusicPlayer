@@ -1,48 +1,102 @@
+/* -------------------------------------------------------- */
+/* SIDEBAR STYLE */
 .sidebar {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidebar a {
-    padding: 20px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.5s;
-  }
-  
-  .sidebar a:hover {
-    color: yellow;
-  }
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
-  .sidebar .openbtn {
-    position: absolute;
-    top: 0;
-    text-align: center;
-    font-size: 36px;
-    display: none;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    display: block;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-    margin-left: 250px;
-  }
+.sidebar a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+.sidebar a:hover {
+  color: yellow;
+}
+
+.sidebar .openbtn {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  font-size: 36px;
+  display: none;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  display: block;
+}
+
+/* -------------------------------------------------------- */
+/* PAGE STYLE */
+.page {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 250px;
+  display: none
+}
+/* Start displaying home page */
+#homePage {
+  display: block;
+}
+
+/* -------------------------------------------------------- */
+/* SMALL PLAYER STYLE */
+.smallPlayer {
+  height: 12%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: yellow;
+  overflow-x: hidden;
+}
+
+.smallPlayer .expandbtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.fullscreenPlayer {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  text-align: center;
+  background-color: magenta;
+  display: none;
+}
+
+.fullscreenPlayer .closefspbutton {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 40px;
+  text-decoration: none;
+  display: none;
+
+}
