@@ -117,6 +117,11 @@
 h1, h3{
   font-family: "Roboto Slab";
   font-weight: 600;
+  text-align: center;
+}
+
+p{
+  text-align: center;
 }
 
 span{
@@ -161,4 +166,17 @@ input[type="checkbox"]:checked + div .toggle-c{
   border-color: #30305c;
 }
 
-input[type="checkbox"]
+.togg{
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  position: sticky;
+}
+
+select{
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-size: .8rem;
+  padding: .7em .7em;
+  background: #4d5061;
+  color: white;
+}
