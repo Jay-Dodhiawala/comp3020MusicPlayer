@@ -3,30 +3,68 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/13a98fad65.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <title>MUSIC PLAYER NAME</title>
 </head>
 <body onload=setup()>
+
+    <!-- Side bar -->
+    <div id="sidebar" class="sidebar">
+        <a href="#" id="closebtn" class="closebtn">×</a>
+        <a href="#" id="openbtn" class="openbtn">☰</a>
+        <a href="#" id="home"><i class="fa fa-home"></i> Home</a> 
+        <a href="#" id="library"><i class="fa fa-book"></i> Library</a>
+        <a href="#" id="history"><i class="fa fa-clock"></i> History</a>
+        <a href="settings.html" id="settings"><i class="fa fa-gear"></i> Settings</a>
+    </div>
     
 
     <!--Settings-->
-    <div class="container" >
-        <div>
-            <h1>Settings</h1>
-        </div>
-        <div>
-            <div>
-                <label for="togg-1" class="togg">
-                    <span>Theme</span>
-                    <input type="checkbox" id="togg-1">
-                    <div class="toggle-container">
-                        <span class="toggle"></span>
-                        <span class="toggle-c"></span>
-                    </div>
-                </label>
+    <div id="main">
+        <div class="container">
+
+            <h1><u>Settings</u></h1>
+    
+            <div class="profile">
+                <h2>Profile</h2>
+    
+                <br>
+                
+                <div class="name">
+                <span>Full Name : </span>
+                <input type="text" class="input" value="James Bond">
+                </div>
+    
+                <div class="dob">
+                <span>Birthday : </span>
+                <input type="date" class="input" value="2000-10-09">
+                </div>
+    
+                <div class="gen">
+                <span>Gender : </span>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                </div>
+    
+                <div class="eml">
+                <span>Email : </span>
+                <input type="email" class="input" value="JamesBond007@gmail.com">
+                </div>
             </div>
-            <br>
-            <div>
+    
+            <div class="general">
+                <h2>General</h2>
+    
+                <br>
+                
+                <div class="toggle">
+                    <span>Dark Mode </span>
+                    <input type="checkbox" class="t" id="togg-1">
+                    <label for="togg-1" class="lab"></label>
+                </div>
+    
+                <div class="drop-1">
                 <label for="drop-1">
                     <span>Quality</span>
                     <select name="quality" id="drop-1">
@@ -35,51 +73,22 @@
                         <option value="low">low</option>
                       </select>
                 </label>
+                </div>
+    
             </div>
-            <br>
-            <div>
-                <label for="drop-2">
-                    <span>Language</span>
-                    <select name="language" id="drop-2">
-                        <option value="eng">English</option>
-                        <option value="fr">French</option>
-                      </select>
-                </label>
-            </div>
-        </div>
-        <div>
-            <div>
-                <h3>Subscription and payment</h3>
-            </div>
-            <div>
-                <label for="drop-3">
-                    <span>Subscription</span>
-                    <select name="sub" id="drop-3">
-                        <option value="monthly">monthly</option>
-                        <option value="yearly">Yearly</option>
-                      </select>
-                </label>
-            </div>
-            <br>
-            <div>
-                <label for="drop-4">
-                    <span>Payment</span>
-                    <select name="sub" id="drop-3">
-                        <option value="credit-card">Credit Card</option>
-                        <option value="paypal">PayPal</option>
-                        <option value="crypto">Crypto</option>
-                      </select>
-                </label>
-            </div>
-        </div>
-        <div>
-            <div>
-                <h1>About Us</h1>
-            </div>
-            <div>
-                <p>version 1.0.0</p>
+    
+            <!-- <hr> -->
+    
+            <div class="about">
+                <h2>About Us</h2>
+    
+                <br>
+    
+                <p><b>version</b> : beta</p>
                 <p>welcome to our music player</p>
             </div>
+            
+    
         </div>
     </div>
 </body>

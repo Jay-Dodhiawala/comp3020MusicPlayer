@@ -1,3 +1,6 @@
+*{
+  margin: 0; padding: 0;box-sizing: border-box;
+}
 /* -------------------------------------------------------- */
 /* SIDEBAR STYLE */
 .sidebar {
@@ -103,74 +106,99 @@
 
 /*this is settings*/
 .container{
-  box-sizing: border-box;
-  background-color: white;
-  padding: 10px 50px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgb(200, 200, 200);
-  width: 450px;
+  background: rgb(255, 255, 255);
+  width: 540px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10%;
+  box-shadow: 2px 5px 20px rgba(0,0,0,.5);
+  border-radius: 25px;
+  overflow: auto;
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
 }
 
-h1, h3{
-  font-family: "Roboto Slab";
-  font-weight: 600;
+h1{
+  margin-top: 20px;
   text-align: center;
+  color: #4d5061;
+}
+
+h2{
+  text-align: center;
+  padding: 5px 0;
+  color: #4d5061;
+}
+
+span{
+  font-weight: 700;
+  padding: 20px;
+}
+
+.profile,.general{
+  position: relative;
+  justify-content: space-around;
+}
+
+.name,.dob,.gen,.eml,.switch,.drop-1{
+  padding-bottom: 2%;
+}
+
+.input{
+  border: 0;
+  border-bottom: 1px solid black;
+}
+
+/* TOOGLE SWITCH */
+.toggle{
+  display: flex;
+  justify-content: start;
+}
+
+.t{
+  display: none;
+}
+
+.lab{
+  position: relative;
+  display: block;
+  align-items: flex-end;
+  width: 50px;
+  height: 30px;
+  background: rgb(172, 172, 172);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 300ms linear;
+}
+
+.lab::before{
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #eee;
+  border-radius: 50%;
+  transition: left 300ms linear;
+}
+
+.t:checked + .lab{
+  background: #4d5061;
+}
+
+.t:checked + .lab::before{
+  left: 23px;
+  background: #eee;
 }
 
 p{
   text-align: center;
-}
-
-span{
-  font-family: "Poppins";
-  font-weight: 500;
-}
-
-.toggle-container{
-    position: relative;
-    width: fit-content;
-    height: fit-content;
-}
-
-.toggle{
-    width: 60px;
-    height: 35px;
-    border-radius: 40px;
-    background-color: #EBEBFE;
-    display: inline-block;
-}
-
-.toggle-c{
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color:white;
-  display: inline-block;
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  transition: 300ms all;
-  border: 1px solid #8C8CA4;
-}
-
-input[type="checkbox"]{
-  display: none;
-}
-
-input[type="checkbox"]:checked + div .toggle-c{
-  left: 30px;
-  background-color: #30305c;
-  border-color: #30305c;
-}
-
-.togg{
-  display: flex;
-  align-self: center;
-  justify-content: space-between;
-  position: sticky;
 }
 
 select{
@@ -179,4 +207,5 @@ select{
   padding: .7em .7em;
   background: #4d5061;
   color: white;
+  border-radius: 10px;
 }
